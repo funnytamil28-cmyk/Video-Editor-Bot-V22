@@ -10,20 +10,20 @@ class Config:
     """Bot configuration class"""
     
     # Telegram Bot Configuration
-    BOT_TOKEN = os.getenv("BOT_TOKEN")
-    API_ID = int(os.getenv("API_ID", "0"))
-    API_HASH = os.getenv("API_HASH")
+    BOT_TOKEN = os.getenv("8784253318:AAGkOy2f650Jzlr-x8XvcuaMVQmd-BBHumA")
+    API_ID = int(os.getenv("API_ID", "15055049"))
+    API_HASH = os.getenv("abe3f66fcd80c91e53009ba52c7b3a83")
     
     # MongoDB Configuration
-    MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
-    DATABASE_NAME = os.getenv("DATABASE_NAME", "video_editor_bot")
+    MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://newsudo:786780@cluster0.pbiae8a.mongodb.net/?appName=Cluster0")
+    DATABASE_NAME = os.getenv("DATABASE_NAME", "newsudo")
     
     # Channel Configuration
     LOG_CHANNEL_ID = os.getenv("LOG_CHANNEL_ID")
     BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True") == "True"
     
     # Admin Configuration
-    ADMIN_IDS = [int(x) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip()]
+    ADMIN_IDS = [int(x) for x in os.getenv("ADMIN_IDS", "7653921320,8808274917").split(",") if x.strip()]
     
     # File Settings
     MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE", "2000"))  # in MB
